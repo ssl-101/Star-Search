@@ -29,7 +29,32 @@ int main ()
 
     //gets score for input
       score = getScore();
-      {
+
+      total += score;
+      scoreHigh = score;
+      scoreLow = score;
+
+      // get remaining scores, with loop
+
+    for (int count =1;count <5; count++)      
+    {
+       score = getScore();
+
+       total += score;
+
+       // check lowest score
+       if (isLower(score, scoreLow))
+       {
+        scoreLow = score;
+       }
+       //check higest score
+       if (isHigher (score, scoreHigh))
+       {
+        scoreHigh = score;
+       }
+       //calculate final average
+       finalAverage = calcAverage (total, 
+                                  scoreHigh, scoreLow;)
         double score;
         cout << "Enter Score: ";
         cin>> score ;
