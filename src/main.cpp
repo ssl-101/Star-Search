@@ -55,7 +55,17 @@ int main ()
        //calculate final average
        finalAverage = calcAverage (total, 
                                   scoreHigh, scoreLow;)
-        double score;
+        //formatting the output
+        cout << fixed << setprecision(2);
+        cout << "Final Score : "
+        << finalAverage << endl;
+        //Displaying final score
+      cout << "Final Score:" << finalAverage << endl;
+   }
+    return 0;
+}
+  
+double score;
         cout << "Enter Score: ";
         cin>> score ;
         
@@ -76,13 +86,8 @@ int main ()
       {
         return value1 >= value2 ;
       }
-        //formatting the output
-        cout << fixed << setprecision(2);
-        cout << "Final Score : "
-        << finalAverage << endl;
+      
 
-    return 0;
-}
 /* calculating average of the scores. 
       calulating with out the highest and lowest
       scores */
