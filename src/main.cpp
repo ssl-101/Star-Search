@@ -52,6 +52,7 @@ int main ()
        {
         scoreHigh = score;
        }
+    }
        //calculate final average
        finalAverage = calcAverage(total, 
                                   scoreHigh, scoreLow );
