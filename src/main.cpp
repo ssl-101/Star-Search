@@ -60,7 +60,7 @@ int main ()
         cout << fixed << setprecision(2);
         //Displaying final score
       cout << "Final Score:" << finalAverage << endl;
-   }
+   
     return 0;
 }
      double getScore()
