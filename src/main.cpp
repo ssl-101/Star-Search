@@ -8,11 +8,11 @@ score will be calculated*/
 using namespace std;
 
 // function prototypes
-double getScore ()
-bool isLower (double value 1, double value 2);
-bool isHigher (double value 1, double value 2);
+double getScore ();
+bool isLower (double value1, double value2);
+bool isHigher (double value1, double value2);
 
-double average ( double total, double scoreHigh,
+double calcAverage ( double total, double scoreHigh,
                  double scoreLow);
 
 /* the main controls the flow of the program by
@@ -53,8 +53,8 @@ int main ()
         scoreHigh = score;
        }
        //calculate final average
-       finalAverage = calcAverage (total, 
-                                  scoreHigh, scoreLow;)
+       finalAverage = calcAverage(total, 
+                                  scoreHigh, scoreLow );
         //formatting the output
         cout << fixed << setprecision(2);
         cout << "Final Score : "
@@ -64,8 +64,9 @@ int main ()
    }
     return 0;
 }
-  
-double score;
+     double getScore()
+     {
+       double score;
         cout << "Enter Score: ";
         cin>> score ;
         
@@ -91,7 +92,7 @@ double score;
 /* calculating average of the scores. 
       calulating with out the highest and lowest
       scores */
-      double calcAverage (double total, double scoreHigh,
+      double calcAverage(double total, double scoreHigh,
                           double scoreLow)
         {
             return (total - scoreLow - scoreHigh) / 3.0;
