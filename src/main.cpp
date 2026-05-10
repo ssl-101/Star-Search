@@ -57,8 +57,6 @@ int main ()
                                   scoreHigh, scoreLow );
         //formatting the output
         cout << fixed << setprecision(2);
-        cout << "Final Score : "
-        << finalAverage << endl;
         //Displaying final score
       cout << "Final Score:" << finalAverage << endl;
    }
@@ -72,7 +70,7 @@ int main ()
         
        while ( score <0 || score > 10)
        {
-        cout<< "Error. enter a number between 0 and 10 : ";
+        cout<< "Invalid input. Enter a number between 0 and 10 : ";
         cin >> score;
        }
        return score;
